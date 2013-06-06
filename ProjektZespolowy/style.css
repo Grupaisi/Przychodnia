@@ -1,0 +1,301 @@
+body {
+
+     background-image:url(images/top_bg.png);
+     height:151px;
+     background-repeat:repeat-x;
+     margin:auto;
+     padding:auto;
+}
+
+#wrraper {
+     width:940px;
+     margin:auto;
+
+}
+
+#top {
+     width:568px;
+     height:149;
+      background-image:url(images/top_akgmed.png);
+     margin:-17px 20px 10px 220px;
+     height:151px;
+}
+#akg_med {
+     width:930px;
+     margin:0 20px 10px 20px;
+     height:151px;
+}
+
+#container {
+     width:940px;
+     margin:auto;	
+}
+/************************************** LEFT COLUMN *************************/
+#left_column {
+
+     width:182px;
+     float:left;
+}
+
+/************************************* MENU LEWE ****************************/
+ul, ul li {
+     display: block;
+     list-style: none;
+     margin: 0;
+     padding: 0 0 1px 0;
+     font-family: Arial;
+     font-size:13pt;
+}
+
+ul {
+     width: 181px;
+     padding: 1px 1px 1px 1px;	
+}
+
+ul li {
+
+}
+
+ul a:link, ul a:visited {
+     margin-top:1px;
+     display: block;
+     width: 181px;
+     height:48px;
+     background-image:url(images/buttonek.png);
+     text-decoration: none;	
+     color: #50b208;
+     text-align: center;
+     padding-top:23px;
+}
+
+ul a:hover {
+     background-position: 0px -70px;
+     width: 181px;
+     height:48px;
+     background-image:url(images/buttonek.png);
+     color: #60b820;
+     padding-top:23px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** CONTENT STRONY ***********************************/
+
+
+
+#right_column {
+     margin-top:2px;
+     float:right;
+     width:744px;
+}
+
+.content {
+     font-family:Arial;
+     font-size:12pt;
+     color:#2d2d2d;
+     margin: 0 auto;
+     margin-bottom:20px;
+     width:720px;
+     padding:10px 10px;
+     background-color: #faf4f4;
+     border: 1px dotted #d5dadc;
+     border-bottom: 1px solid #134552;
+     border-top: 1px solid #134552;
+     
+
+}
+
+/**********************Panel Logowania I formularze ***********************************/
+
+
+#login_panel {
+     background-image:url(images/panel_logowania_bg.png);
+     background-repeat:no-repeat;
+     width:181px;
+     height:161px;
+     margin: 50px auto;
+}
+
+
+#form_login_panel {
+     font-family:Arial, Helvetica, sans-serif;
+     font-size:11pt;
+     color:#093c4b;
+     padding:38px 0 0 10px;
+}
+
+
+.form_login {
+     border: #c2c1c1 1px solid;
+     font-size: 11px;
+     background-image: url(images/bg_form.png); 
+     background-repeat:repeat-x;
+     font-family:Arial, Helvetica, sans-serif;
+     height: 20px;
+     width:160px;
+} 
+
+div.myButton input {
+     font-size: 0;
+     width: 73px;
+     height: 25px;
+     border: none;
+     margin: 5px 10px 0 0;
+     float:right;
+     padding: 0;
+     cursor:pointer;
+     background: url(images/zaloguj.png)  no-repeat;
+}
+
+div.logoutButton input {
+     font-size: 0;
+     width: 73px;
+     height: 25px;
+     border: none;
+     margin: 0px 15px 0 0;
+     float:right;
+     padding: 0;
+     cursor:pointer;
+     background: url(images/wyloguj.png)  no-repeat;
+}
+
+.bigButton {
+
+     width:208px;
+     height:89px;
+     background: url(images/big_button.png)  no-repeat;
+     color:#4b4307;
+     font-weight: bolder;
+}
+
+#form_register{
+     border: #cfcfcf 1px solid;
+     font-size: 11px;
+     background-color:#e4e4e4;
+     font-family:Arial, Helvetica, sans-serif;
+     height: 22px;
+     width:181px;
+     float:right;
+}
+
+
+
+/********************************* VALIDATION *********************************/
+
+.succes {
+     background-color:#60b820;
+     border: 1px solid #427d17;
+     color: #1e4402;
+     margin:2px 10px 2px 2px;
+     padding:2px 5px 2px 5px;
+     
+}
+
+.error {
+     background-color:#d2391f;
+     border: 1px solid #7a190a;
+     color: #4e1208;
+     margin:2px 10px 2px 2px;
+     padding:2px 5px 2px 5px;
+     
+}
+
+.naglowek_podstrony {
+     padding: 9px 0 0 9px;
+     background: url(images/naglowek.png)  no-repeat;
+     width:707px;
+     height:41px;
+     color:#50b208;
+     font-size:13pt;    
+     margin-bottom: 10px;
+}
+.naglowki {
+     background-color: #e5eee2;
+     width:707px;    
+     color:#363636;
+     border-bottom: solid 1px #73880a;
+     border-top: solid 1px #73880a;
+     padding:6px 0 6px 10px;
+     font-size:13pt;
+     margin:15px 0 6px 0;
+}
+
+
+.user_info {
+     padding-left:7px;
+     color:#222222;
+     height:30px;
+     background-color:#dfdfdf;
+     border-bottom: 1px solid #6b6b6b;    
+}
+
+.term_wolny {
+     height:30px;
+     font-size:13pt;
+     color:#1c3708;
+     font-weight: bolder;
+     background-color:#67c621;
+     border-bottom: 1px solid #1c3708; 
+     border-left: 1px solid #5db41e;  
+     text-align:center;
+}
+
+.term_zajety {
+     height:30px;
+     font-size:13pt;
+     color:#460606;
+     margin: 0 auto;
+     font-weight: bolder;
+     background-color:#d01414;
+     border-bottom: 1px solid #610909;    
+     border-left: 1px solid #b31414;   
+     text-align:center;
+}
+
+
+
+
+
+.content-password {
+     
+
+
+}
+
+
+
+#naglowki_password {
+     background-color: #e5eee2;
+     width:707px;    
+     color:#363636;
+     border-bottom: solid 1px #73880a;
+     border-top: solid 1px #73880a;
+     padding:6px 0 6px 10px;
+     font-size:13pt;
+     margin:15px 0 6px 0;
+}

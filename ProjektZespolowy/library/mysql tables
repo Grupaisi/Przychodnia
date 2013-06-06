@@ -1,0 +1,77 @@
+create table pacjenci (pacjentID INT(11) not null auto_increment unique
+,pesel VARCHAR(11) unique
+,password VARCHAR(255)
+,imie VARCHAR(200) not null
+,nazwisko VARCHAR(200) not null
+,email VARCHAR(255) unique
+,nr_ubezpieczenia VARCHAR(6) unique);
+
+
+
+
+
+create table danePacjentow (
+danePacjentowID INT(11) not null auto_increment unique
+,pesel VARCHAR(11) unique
+,drugie_imie VARCHAR(150)
+,nr_dowodu VARCHAR(50) not null
+,tel_kom VARCHAR(20) 
+,tel_dom VARCHAR(20)
+,ulica VARCHAR(255)
+,nr_domu VARCHAR(10)
+,nr_mieszkania VARCHAR(10)
+,kod_pocztowy VARCHAR(6)
+,miasto VARCHAR(150)
+,FOREIGN KEY (pesel) REFERENCES pacjenci(pesel)
+);
+
+/****** LEKARZE ***********/
+
+
+create table lekarze 
+(
+lekarzID INT(11) not null auto_increment unique
+,pesel VARCHAR(11) unique
+,password VARCHAR(255)
+,imie VARCHAR(200) not null
+,nazwisko VARCHAR(200) not null
+,email VARCHAR(255) unique
+,nr_licencji VARCHAR(100) unique
+,specjalizacja VARCHAR(255));
+
+
+
+
+create table danelekarzy (
+daneLekarzyID INT(11) not null auto_increment unique
+,pesel VARCHAR(11) unique
+,drugie_imie VARCHAR(150)
+,nr_dowodu VARCHAR(50) not null
+,tel_kom VARCHAR(20) 
+,tel_dom VARCHAR(20)
+,ulica VARCHAR(255)
+,nr_domu VARCHAR(10)
+,nr_mieszkania VARCHAR(10)
+,kod_pocztowy VARCHAR(6)
+,miasto VARCHAR(150)
+,FOREIGN KEY (pesel) REFERENCES lekarze(pesel)
+);
+
+
+
+
+
+CREATE table `wizyty` (
+wizytaID INT(11) unique auto_increment not null,
+pacjentID INT(11),
+dataWizyty date,
+godzinaWizyty VARCHAR(100),
+imieLekarza VARCHAR(100),
+nazwiskoLekarza VARCHAR(100),
+nr_licencji VARCHAR(100),
+tematWizyty VARCHAR(100),
+uwagi VARCHAR(255),
+odbyta bool,
+FOREIGN KEY (nr_licencji) REFERENCES lekarze(nr_licencji)
+,FOREIGN KEY (pacjentID) REFERENCES pacjenci(pacjentID)
+);
